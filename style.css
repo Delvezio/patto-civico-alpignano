@@ -1402,13 +1402,17 @@ body.menu-open {
     display: none;
   }
 
-  .notice-bar {
+  .notice-bar__inner {
+    min-height: 40px;
+    padding: 0.35rem 0;
+  }
+
+  .notice-bar__inner p {
     display: none;
   }
 
-  .notice-bar__inner {
-    flex-direction: column;
-    gap: 0.35rem;
+  .notice-label {
+    padding: 0.2rem 0.7rem;
   }
 
   .site-header.is-scrolled .nav-shell,
