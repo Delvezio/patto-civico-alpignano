@@ -981,8 +981,18 @@ select {
   min-height: 82px;
 }
 
+.site-footer__meta {
+  display: grid;
+  gap: 0.25rem;
+}
+
 .site-footer__inner p {
   margin: 0;
+}
+
+.site-footer__credit {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.72);
 }
 
 .site-footer__inner a {
