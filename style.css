@@ -490,6 +490,13 @@ select {
   padding: 6rem 0;
 }
 
+@supports (content-visibility: auto) {
+  .section {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 960px;
+  }
+}
+
 .section--light {
   background:
     radial-gradient(circle at top right, rgba(240, 203, 56, 0.13), rgba(240, 203, 56, 0) 34%),
@@ -1390,6 +1397,18 @@ body.menu-open {
     gap: 0.35rem;
   }
 
+  .site-header.is-scrolled .nav-shell,
+  .hero__metrics article,
+  .hero__panel,
+  .vote-banner__panel,
+  .profile-chip {
+    backdrop-filter: none;
+  }
+
+  .site-header.is-scrolled .nav-shell {
+    background: linear-gradient(45deg, rgba(20, 76, 148, 0.96) 0%, rgba(17, 39, 83, 0.98) 100%);
+  }
+
   .menu-toggle {
     display: inline-block;
   }
@@ -1444,6 +1463,10 @@ body.menu-open {
   .hero {
     padding-top: 10rem;
     background-position: 70% center;
+  }
+
+  .section-kicker::before {
+    animation: none;
   }
 
   .hero__metrics,
