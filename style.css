@@ -1392,6 +1392,12 @@ body.menu-open {
 }
 
 @media (max-width: 860px) {
+  .hero {
+    background:
+      linear-gradient(45deg, rgba(20, 76, 148, 0.97) 0%, rgba(17, 39, 83, 0.92) 58%, rgba(17, 39, 83, 0.52) 100%),
+      url("assets/andrea-oliva-hero-mobile.jpg") center 24% / cover no-repeat;
+  }
+
   .notice-bar__inner {
     flex-direction: column;
     gap: 0.35rem;
