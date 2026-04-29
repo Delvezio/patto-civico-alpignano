@@ -8,7 +8,9 @@ Sito statico single page della lista civica a sostegno di Andrea Oliva.
 - `style.css`: stile globale
 - `script.js`: interazioni leggere
 - `assets/`: immagini e logo
-- `documenti/`: programma, curriculum e casellari
+- `documenti/`: programma e casellari
+- `data/`: dati dei profili candidati
+- `profilo.html`: template pagina profilo
 
 ## Anteprima locale
 

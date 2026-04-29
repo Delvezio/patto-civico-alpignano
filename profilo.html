@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Scheda profilo dei candidati di Patto Civico per Alpignano, con dati personali, lavoro, famiglia, passioni e interessi sociali."
+    />
+    <meta name="theme-color" content="#144C94" />
+    <title>Profilo Candidato | Patto Civico per Alpignano</title>
+    <link rel="icon" href="assets/logo-lista-patto-civico.png" type="image/png" />
+    <link rel="shortcut icon" href="assets/logo-lista-patto-civico.png" />
+    <link rel="apple-touch-icon" href="assets/logo-lista-patto-civico.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Montserrat:wght@800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=20260429d" />
+    <script>
+      document.documentElement.classList.add("js-enabled");
+    </script>
+    <script defer src="script.js?v=20260429d"></script>
+  </head>
+  <body class="docs-page profile-page">
+    <main class="profile-shell">
+      <div class="container">
+        <a class="docs-back" href="./index.html#candidati">&larr; Torna alla squadra</a>
+
+        <section class="profile-hero">
+          <div class="profile-hero__copy">
+            <span class="section-kicker">Profilo Candidato</span>
+            <h1 data-profile-name>Caricamento profilo...</h1>
+            <p data-profile-intro>
+              Stiamo preparando la scheda personale del candidato con i dati ricevuti.
+            </p>
+          </div>
+          <div class="profile-hero__logo" aria-hidden="true">
+            <img src="assets/logo-lista-patto-civico.png" alt="" />
+          </div>
+        </section>
+
+        <section class="profile-panel" data-candidate-profile-root></section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© <span id="current-year"></span> Patto Civico per Alpignano • Andrea Oliva Sindaco</p>
+        <button class="scroll-top" type="button" data-scroll-top aria-label="Torna in cima">
+          <span class="scroll-top__icon" aria-hidden="true">↑</span>
+          <span>Torna su</span>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
