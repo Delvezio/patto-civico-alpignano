@@ -1398,6 +1398,14 @@ body.menu-open {
       url("assets/andrea-oliva-hero-mobile.jpg") center 24% / cover no-repeat;
   }
 
+  .hero::before {
+    display: none;
+  }
+
+  .notice-bar {
+    display: none;
+  }
+
   .notice-bar__inner {
     flex-direction: column;
     gap: 0.35rem;
