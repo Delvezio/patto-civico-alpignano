@@ -33,11 +33,11 @@
       "lastName": "Micheletti",
       "birthPlace": "Torino (TO)",
       "birthDateDisplay": "05 giugno 1973",
-      "profileReady": false,
-      "work": "",
-      "family": "",
-      "passions": "",
-      "socialInterests": ""
+      "profileReady": true,
+      "work": "Impiegata presso uno studio commercialista.",
+      "family": "È sposata con Giuseppe Mosca e ha un figlio di nome Andrea, di 18 anni.",
+      "passions": "Fitness.",
+      "socialInterests": "Attivismo ambientale."
     },
     {
       "slug": "giuseppe-mosca",
