@@ -20,11 +20,11 @@
       "lastName": "Bigi",
       "birthPlace": "Castellamonte (TO)",
       "birthDateDisplay": "06 giugno 1980",
-      "profileReady": false,
-      "work": "",
-      "family": "",
-      "passions": "",
-      "socialInterests": ""
+      "profileReady": true,
+      "work": "Assistente alla poltrona presso lo studio V Dent di Alpignano. Si occupa dell'assistenza al dottore durante le attività cliniche, con particolare attenzione al paziente.",
+      "family": "È sposata con Pino dal 2009. Insieme hanno tre figli, Andrea, Edoardo ed Emanuele, e due splendidi cagnoloni, Sasha e Slash.",
+      "passions": "È appassionata di etichetta e buone maniere, in particolar modo di tutto ciò che riguarda l'accoglienza e il ricevimento.",
+      "socialInterests": "È iscritta da anni all'UNITALSI, con cui ha partecipato a numerosi viaggi accompagnando bambini speciali. È anche donatrice Avis di sangue e plasma. In futuro le piacerebbe unire la passione per le buone maniere al sociale, organizzando corsi anche all'interno delle scuole."
     },
     {
       "slug": "ilaria-micheletti",
@@ -46,11 +46,11 @@
       "lastName": "Mosca",
       "birthPlace": "Palermo (PA)",
       "birthDateDisplay": "04 luglio 1966",
-      "profileReady": false,
-      "work": "",
-      "family": "",
-      "passions": "",
-      "socialInterests": ""
+      "profileReady": true,
+      "work": "Pensionato.",
+      "family": "È sposato con Ilaria Micheletti e ha un figlio di 18 anni, Andrea.",
+      "passions": "Fitness.",
+      "socialInterests": "Attivismo ambientale."
     },
     {
       "slug": "andrea-penza",
@@ -59,11 +59,11 @@
       "lastName": "Penza",
       "birthPlace": "Torino (TO)",
       "birthDateDisplay": "16 settembre 1993",
-      "profileReady": false,
-      "work": "",
-      "family": "",
-      "passions": "",
-      "socialInterests": ""
+      "profileReady": true,
+      "work": "Imprenditore nel settore elettromedicale, con consolidata esperienza nello sviluppo e nella gestione di soluzioni tecnologiche destinate all'ambito sanitario. Opera con un approccio orientato alla qualità, all'innovazione e alla crescita sostenibile, con particolare attenzione all'efficacia dei servizi e al valore generato.",
+      "family": "Condivide la propria vita con la compagna e i loro tre figli.",
+      "passions": "Nutre un forte interesse per la tecnologia e l'innovazione, con particolare attenzione alle loro applicazioni in diversi settori. Dedica inoltre tempo all'aggiornamento continuo e alla crescita personale.",
+      "socialInterests": "È interessato a contesti professionali qualificati e alla costruzione di relazioni basate su collaborazione, competenza e visione condivisa. Partecipa con interesse a iniziative e progetti che favoriscono lo sviluppo e l'innovazione."
     },
     {
       "slug": "alessio-delogu",
@@ -98,24 +98,24 @@
       "lastName": "Soviero",
       "birthPlace": "Sarno (SA)",
       "birthDateDisplay": "09 novembre 1995",
-      "profileReady": false,
-      "work": "",
-      "family": "",
-      "passions": "",
-      "socialInterests": ""
+      "profileReady": true,
+      "work": "Terminata la scuola ha lavorato come animatore nei villaggi turistici, aiuto cuoco, addetto al controllo qualità presso Fiat e magazziniere in ambito logistico. Attualmente lavora come autista in Amiat, gruppo Iren, a Torino.",
+      "family": "È papà di un bambino di sei anni.",
+      "passions": "È una persona molto estroversa e ama stare in mezzo alle persone. Adora tutto ciò che riguarda i motori ed è motociclista nel tempo libero. Un'altra sua passione è lo sport, in particolar modo il calcio e la MotoGP. È inoltre particolarmente attratto dal campo informatico, che utilizza con dimestichezza.",
+      "socialInterests": "Fa parte del gruppo sindacale presso la propria azienda, AMIAT."
     },
     {
       "slug": "ilaria-molinar",
       "role": "Candidata",
       "firstName": "Ilaria",
-      "lastName": "Molinar",
+      "lastName": "Molinar Rubat",
       "birthPlace": "Cirie (TO)",
       "birthDateDisplay": "08 agosto 2001",
-      "profileReady": false,
-      "work": "",
-      "family": "",
-      "passions": "",
-      "socialInterests": ""
+      "profileReady": true,
+      "work": "Assistente alla poltrona.",
+      "family": "Vive ancora a casa con la mamma e il fratello.",
+      "passions": "Ama passare il tempo libero con i suoi animali, la famiglia e gli amici. Ama viaggiare e andare a camminare in montagna.",
+      "socialInterests": "Le piacerebbe fare volontariato in canile per prendersi cura dei cani che non hanno una famiglia, oppure in Croce Verde."
     },
     {
       "slug": "eva-tosi-beleffi",

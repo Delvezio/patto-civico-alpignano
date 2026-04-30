@@ -1483,6 +1483,22 @@ body.menu-open {
     background-position: 70% center;
   }
 
+  .profile-panel {
+    margin-top: 1.4rem;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: 0;
+    padding: 1rem 0;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .profile-layout,
+  .profile-cards-grid {
+    gap: 0.85rem;
+  }
+
   .section-kicker::before {
     animation: none;
   }
