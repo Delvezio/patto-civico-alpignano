@@ -1455,6 +1455,20 @@ body.menu-open {
     background: rgba(255, 255, 255, 0.03);
   }
 
+  .site-nav .nav-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gold-500);
+    color: var(--navy-950) !important;
+  }
+
+  .site-nav .nav-cta:hover,
+  .site-nav .nav-cta:focus-visible {
+    color: var(--navy-950) !important;
+    background: #f7d75d;
+  }
+
   .site-nav.is-open {
     opacity: 1;
     pointer-events: auto;
