@@ -12,30 +12,13 @@
     <link rel="icon" href="assets/logo-lista-patto-civico.png" type="image/png" />
     <link rel="shortcut icon" href="assets/logo-lista-patto-civico.png" />
     <link rel="apple-touch-icon" href="assets/logo-lista-patto-civico.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Montserrat:wght@800&amp;display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Montserrat:wght@800&amp;display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Montserrat:wght@800&amp;display=swap"
-      />
-    </noscript>
-    <link rel="stylesheet" href="style.css?v=20260430c" />
+    <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/montserrat-800-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="style.css?v=20260510a" />
     <script>
       document.documentElement.classList.add("js-enabled");
     </script>
-    <script defer src="script.js?v=20260429f"></script>
+    <script defer src="script.js?v=20260510a"></script>
   </head>
   <body class="docs-page profile-page">
     <main class="profile-shell">
@@ -67,12 +50,24 @@
 
     <footer class="site-footer">
       <div class="container site-footer__inner">
-        <p>© <span id="current-year"></span> Patto Civico per Alpignano • Andrea Oliva Sindaco</p>
+        <div class="site-footer__meta">
+          <p>© <span id="current-year"></span> Patto Civico per Alpignano • Andrea Oliva Sindaco</p>
+        </div>
         <button class="scroll-top" type="button" data-scroll-top aria-label="Torna in cima">
           <span class="scroll-top__icon" aria-hidden="true">↑</span>
           <span>Torna su</span>
         </button>
       </div>
     </footer>
+
+    <div class="site-bottombar">
+      <div class="container site-bottombar__inner">
+        <a href="privacy.html">Privacy e Cookie</a>
+        <p class="site-bottombar__credit">
+          Design &amp; dev by
+          <a href="https://delvup.com" target="_blank" rel="noreferrer">Delvup.com</a>
+        </p>
+      </div>
+    </div>
   </body>
 </html>

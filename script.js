@@ -81,6 +81,7 @@ const renderCandidateProfile = (candidate) => {
   const fullName = `${candidate.firstName} ${candidate.lastName}`;
   const initials = `${candidate.firstName?.[0] ?? ""}${candidate.lastName?.[0] ?? ""}`;
   const casellarioUrl = `documenti/casellari/${candidate.slug}.pdf`;
+  const profilePhotoUrl = `assets/candidates/${candidate.slug}.jpg`;
   const profileReady = Boolean(candidate.profileReady);
   const introText = candidate.socialInterests || candidate.passions || candidate.work || "";
   const candidacyLabel =
@@ -97,7 +98,15 @@ const renderCandidateProfile = (candidate) => {
   candidateProfileRoot.innerHTML = `
     <div class="profile-layout">
       <article class="profile-spotlight">
-        <div class="profile-spotlight__avatar">${escapeHtml(initials)}</div>
+        <div class="profile-spotlight__avatar">
+          <img
+            src="${profilePhotoUrl}"
+            alt="Foto di ${escapeHtml(fullName)}"
+            width="720"
+            height="720"
+            decoding="async"
+          />
+        </div>
         <span class="profile-spotlight__role">${escapeHtml(candidate.role)}</span>
         <h2>${escapeHtml(fullName)}</h2>
         <p class="profile-spotlight__lead">

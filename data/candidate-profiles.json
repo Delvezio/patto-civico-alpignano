@@ -7,11 +7,11 @@
       "lastName": "Genre",
       "birthPlace": "Torino (TO)",
       "birthDateDisplay": "24 aprile 1981",
-      "profileReady": false,
-      "work": "",
-      "family": "",
-      "passions": "",
-      "socialInterests": ""
+      "profileReady": true,
+      "work": "Medico odontoiatra e imprenditrice, ha aperto il suo studio V Dent proprio ad Alpignano.",
+      "family": "Cresciuta ad Alpignano fin dalla nascita, ha 45 anni ed è madre di tre splendide bambine.",
+      "passions": "È appassionata di salute, animali, arte e amicizia.",
+      "socialInterests": "Crede nell'impegno personale, nel sociale e nella politica del territorio."
     },
     {
       "slug": "susan-bigi",
