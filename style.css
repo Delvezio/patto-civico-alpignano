@@ -1480,9 +1480,24 @@ select {
 }
 
 .profile-panel__ghost {
-  border-color: rgba(20, 76, 148, 0.2);
-  color: var(--navy-900);
-  background: rgba(20, 76, 148, 0.05);
+  gap: 0.55rem;
+  border-color: rgba(20, 76, 148, 0.95);
+  color: var(--white);
+  background: linear-gradient(45deg, #144c94 0%, #112753 100%);
+  box-shadow: 0 16px 28px rgba(17, 39, 83, 0.18);
+}
+
+.profile-panel__ghost::after {
+  content: "\2197";
+  font-size: 0.96rem;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.profile-panel__ghost:hover,
+.profile-panel__ghost:focus-visible {
+  border-color: var(--gold-500);
+  box-shadow: 0 18px 32px rgba(17, 39, 83, 0.24);
 }
 
 .js-enabled .reveal {
