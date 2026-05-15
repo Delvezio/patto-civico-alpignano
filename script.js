@@ -8,9 +8,53 @@ const candidateProfileRoot = document.querySelector("[data-candidate-profile-roo
 const candidateProfileName = document.querySelector("[data-profile-name]");
 const candidateProfileIntro = document.querySelector("[data-profile-intro]");
 
+// Aggiornare il testo WhatsApp precompilato prima della pubblicazione.
+const campaignContacts = {
+  phoneDisplay: "352 018 2315",
+  phoneRaw: "393520182315",
+  emailAddress: "pattocivicoalpignano@gmail.com",
+  telegramUrl: "https://t.me/pattocivicoalpignano",
+  telegramLabel: "@pattocivicoalpignano",
+  whatsappMessage:
+    "Ciao, vi scrivo per una segnalazione sul territorio o per avere informazioni sulla vostra proposta per Alpignano.",
+};
+
+const campaignContactLinks = {
+  phone: `tel:+${campaignContacts.phoneRaw}`,
+  email: `mailto:${campaignContacts.emailAddress}`,
+  telegram: campaignContacts.telegramUrl,
+  whatsapp: `https://wa.me/${campaignContacts.phoneRaw}?text=${encodeURIComponent(campaignContacts.whatsappMessage)}`,
+};
+
 if (currentYear) {
   currentYear.textContent = new Date().getFullYear();
 }
+
+const hydrateCampaignContacts = () => {
+  document.querySelectorAll("[data-campaign-phone]").forEach((node) => {
+    node.textContent = campaignContacts.phoneDisplay;
+  });
+
+  document.querySelectorAll("[data-campaign-telegram]").forEach((node) => {
+    node.textContent = campaignContacts.telegramLabel;
+  });
+
+  document.querySelectorAll("[data-campaign-email]").forEach((node) => {
+    node.textContent = campaignContacts.emailAddress;
+  });
+
+  document.querySelectorAll("[data-campaign-link]").forEach((node) => {
+    if (!(node instanceof HTMLAnchorElement)) return;
+
+    const key = node.dataset.campaignLink;
+    const href = key ? campaignContactLinks[key] : "";
+
+    if (!href) return;
+    node.href = href;
+  });
+};
+
+hydrateCampaignContacts();
 
 if (menuToggle && siteNav) {
   menuToggle.addEventListener("click", () => {
