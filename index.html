@@ -14,11 +14,11 @@
     <link rel="apple-touch-icon" href="assets/logo-lista-patto-civico.png" />
     <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="assets/fonts/montserrat-800-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="style.css?v=20260513b" />
+    <link rel="stylesheet" href="style.css?v=20260519a" />
     <script>
       document.documentElement.classList.add("js-enabled");
     </script>
-    <script defer src="script.js?v=20260513b"></script>
+    <script defer src="script.js?v=20260518a"></script>
   </head>
   <body>
     <header class="site-header" id="top">
@@ -63,6 +63,7 @@
             <a href="#visione">Visione</a>
             <a href="#candidati">Candidati</a>
             <a href="#programma">Programma</a>
+            <a href="come-si-vota.html">Come si vota</a>
             <a href="#documenti">Documenti</a>
             <a
               class="nav-cta"
@@ -766,19 +767,10 @@
             <p class="vote-banner__quote">
               Una squadra che nasce ad Alpignano per Alpignano.
             </p>
-<!--
             <div class="vote-banner__actions">
-              <a class="btn btn--primary" href="#candidati">Scopri la squadra</a>
-              <a
-                class="btn btn--ghost"
-                href="documenti/programma/programma-di-mandato-2026-2031.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Leggi il programma
-              </a>
+              <a class="btn btn--primary" href="come-si-vota.html">Scopri come si vota</a>
+              <a class="btn btn--ghost" href="#candidati">Scopri la squadra</a>
             </div>
-            -->
           </div>
 
           <aside class="vote-banner__panel">
@@ -838,10 +830,12 @@
                 <div class="connect-card__stack">
                   <a
                     class="connect-card__action connect-card__action--light"
-                    data-campaign-link="phone"
+                    data-campaign-link="whatsapp"
                     href="#"
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    <span>Salva il numero</span>
+                    <span>Apri WhatsApp</span>
                     <strong data-campaign-phone>352 018 2315</strong>
                   </a>
                   <a class="connect-card__subaction" data-campaign-link="email" href="#">
@@ -936,6 +930,9 @@
               <a class="btn btn--ghost btn--light" href="documenti/" target="_blank" rel="noreferrer">
                 Vai all'archivio documenti
               </a>
+              <a class="btn btn--ghost btn--light" href="come-si-vota.html">
+                Guida al voto
+              </a>
             </div>
 
             <ul class="contact-list">
@@ -957,6 +954,12 @@
                   Certificati Penali dei Candidati
                 </a>
               </li>
+              <li>
+                <span>Guida al voto</span>
+                <a href="come-si-vota.html">
+                  Casi di voto valido e preferenze
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -971,7 +974,7 @@
             <p>Salva il numero della lista, iscriviti al canale Telegram, scrivici su WhatsApp o via email.</p>
           </div>
           <div class="site-footer__connect-links">
-            <a class="footer-contact footer-contact--phone" data-campaign-link="phone" href="#">
+            <a class="footer-contact footer-contact--phone" data-campaign-link="whatsapp" href="#" target="_blank" rel="noreferrer">
               <span class="footer-contact__icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none">
                   <path
@@ -984,8 +987,8 @@
                 </svg>
               </span>
               <span class="footer-contact__text">
-                <strong>Salva il numero</strong>
-                <small data-campaign-phone>352 018 2315</small>
+                <strong>Salva il contatto</strong>
+                <small>Apri la chat WhatsApp</small>
               </span>
             </a>
 
@@ -1009,8 +1012,8 @@
                 </svg>
               </span>
               <span class="footer-contact__text">
-                <strong>Email</strong>
-                <small data-campaign-email>pattocivicoalpignano@gmail.com</small>
+                <strong>Scrivici via email</strong>
+                <small>Contatto ufficiale della lista</small>
               </span>
             </a>
 
@@ -1031,8 +1034,8 @@
                 />
               </span>
               <span class="footer-contact__text">
-                <strong>Telegram</strong>
-                <small data-campaign-telegram>@pattocivicoalpignano</small>
+                <strong>Entra nel canale</strong>
+                <small>Aggiornamenti e notizie</small>
               </span>
             </a>
 
@@ -1053,8 +1056,8 @@
                 />
               </span>
               <span class="footer-contact__text">
-                <strong>WhatsApp</strong>
-                <small>Messaggio già pronto</small>
+                <strong>Invia una segnalazione</strong>
+                <small>Domande e territorio</small>
               </span>
             </a>
           </div>
@@ -1071,6 +1074,21 @@
         </div>
       </div>
     </footer>
+
+    <div class="cookie-notice" data-cookie-notice>
+      <div class="cookie-notice__copy">
+        <strong>Privacy e strumenti tecnici</strong>
+        <p>
+          Questo sito utilizza solo strumenti tecnici necessari al funzionamento e link esterni a
+          telefono, email, WhatsApp e Telegram. Non risultano cookie di profilazione o pixel
+          pubblicitari.
+        </p>
+      </div>
+      <div class="cookie-notice__actions">
+        <a class="cookie-notice__link" href="privacy.html">Leggi l’informativa</a>
+        <button class="cookie-notice__button" type="button" data-cookie-dismiss>Ho capito</button>
+      </div>
+    </div>
 
     <div class="site-bottombar">
       <div class="container site-bottombar__inner">

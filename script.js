@@ -7,8 +7,10 @@ const scrollTopButton = document.querySelector("[data-scroll-top]");
 const candidateProfileRoot = document.querySelector("[data-candidate-profile-root]");
 const candidateProfileName = document.querySelector("[data-profile-name]");
 const candidateProfileIntro = document.querySelector("[data-profile-intro]");
+const cookieNotice = document.querySelector("[data-cookie-notice]");
+const cookieDismissButton = document.querySelector("[data-cookie-dismiss]");
+const cookieNoticeStorageKey = "patto-civico-cookie-notice-dismissed";
 
-// Aggiornare il testo WhatsApp precompilato prima della pubblicazione.
 const campaignContacts = {
   phoneDisplay: "352 018 2315",
   phoneRaw: "393520182315",
@@ -55,6 +57,44 @@ const hydrateCampaignContacts = () => {
 };
 
 hydrateCampaignContacts();
+
+const hideCookieNotice = () => {
+  if (!cookieNotice) return;
+  cookieNotice.classList.add("is-hidden");
+};
+
+const showCookieNotice = () => {
+  if (!cookieNotice) return;
+  cookieNotice.classList.remove("is-hidden");
+};
+
+if (cookieNotice) {
+  let noticeDismissed = false;
+
+  try {
+    noticeDismissed = window.localStorage.getItem(cookieNoticeStorageKey) === "true";
+  } catch (error) {
+    noticeDismissed = false;
+  }
+
+  if (noticeDismissed) {
+    hideCookieNotice();
+  } else {
+    showCookieNotice();
+  }
+}
+
+if (cookieDismissButton) {
+  cookieDismissButton.addEventListener("click", () => {
+    hideCookieNotice();
+
+    try {
+      window.localStorage.setItem(cookieNoticeStorageKey, "true");
+    } catch (error) {
+      console.warn("Impossibile memorizzare la chiusura dell'avviso privacy.", error);
+    }
+  });
+}
 
 if (menuToggle && siteNav) {
   menuToggle.addEventListener("click", () => {
