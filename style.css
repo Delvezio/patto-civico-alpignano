@@ -1957,13 +1957,73 @@ select {
 }
 
 .vote-guide-points {
+  --point-icon: "✓";
+  --point-rgb: 20, 76, 148;
   margin: 0;
-  padding-left: 1.1rem;
+  padding: 0;
+  list-style: none;
   color: var(--ink-700);
 }
 
+.vote-guide-row--list .vote-guide-points {
+  --point-icon: "X";
+  --point-rgb: 20, 76, 148;
+}
+
+.vote-guide-row--linked .vote-guide-points {
+  --point-icon: "+";
+  --point-rgb: 240, 203, 56;
+}
+
+.vote-guide-row--mayor-only .vote-guide-points {
+  --point-icon: "1";
+  --point-rgb: 17, 39, 83;
+}
+
+.vote-guide-row--preferences .vote-guide-points {
+  --point-icon: "1-2";
+  --point-rgb: 43, 145, 187;
+}
+
+.vote-guide-row--split .vote-guide-points {
+  --point-icon: "↔";
+  --point-rgb: 68, 113, 46;
+}
+
+.vote-guide-points li {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+  padding: 0.88rem 0.95rem;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(247, 249, 253, 0.98), rgba(241, 246, 255, 0.96));
+  border: 1px solid rgba(var(--point-rgb), 0.14);
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.vote-guide-points li::before {
+  content: var(--point-icon);
+  display: inline-grid;
+  place-items: center;
+  min-width: 2.35rem;
+  height: 2.35rem;
+  padding: 0 0.4rem;
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(var(--point-rgb), 0.96), rgba(17, 39, 83, 0.96));
+  color: var(--white);
+  font-family: "Montserrat", "Avenir Next", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  box-shadow: 0 14px 28px rgba(17, 39, 83, 0.14);
+}
+
 .vote-guide-points li + li {
-  margin-top: 0.55rem;
+  margin-top: 0.65rem;
 }
 
 .vote-guide-cta {
@@ -2164,6 +2224,16 @@ select {
   color: var(--white);
 }
 
+.vote-guide-faq__banner h3 {
+  margin:0;
+  font-family: "Montserrat", "Avenir Next", sans-serif;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  font-weight: 800;
+  line-height:1;
+  letter-spacing: 0.015em;
+  color: var(--gold-500);
+}
+
 .vote-guide-faq__banner p {
   margin: 0.95rem 0 0;
   max-width: 46rem;
@@ -2273,6 +2343,8 @@ select {
 
 .vote-guide-faq__recap {
   margin-top: 1rem;
+  display: grid;
+  gap: 1.15rem;
   padding: 1.5rem;
   border-radius: var(--radius-lg);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -2283,21 +2355,102 @@ select {
 }
 
 .vote-guide-faq__recap .section-kicker {
-  margin-bottom: 1rem;
+  justify-self: start;
+  width: max-content;
+  margin-bottom: 0.8rem;
 }
 
 .vote-guide-faq__recap h3 {
   color: var(--white);
 }
 
-.vote-guide-faq__recap-list {
-  margin: 1rem 0 0;
-  padding-left: 1.1rem;
-  color: rgba(255, 255, 255, 0.88);
+.vote-guide-faq__recap-header p {
+  margin: 0.9rem 0 0;
+  max-width: 48rem;
+  color: rgba(255, 255, 255, 0.84);
 }
 
-.vote-guide-faq__recap-list li + li {
-  margin-top: 0.5rem;
+.vote-guide-faq__recap-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.vote-guide-faq__recap-step {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.85rem;
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.vote-guide-faq__recap-step strong {
+  display: inline-grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 14px;
+  background: rgba(240, 203, 56, 0.96);
+  color: var(--navy-950);
+  font-family: "Montserrat", "Avenir Next", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.vote-guide-faq__recap-step h4 {
+  margin: 0;
+  color: var(--white);
+  font-family: "Montserrat", "Avenir Next", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.vote-guide-faq__recap-step p {
+  margin: 0.45rem 0 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.vote-guide-faq__recap-notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.vote-guide-faq__recap-note {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.95rem 1rem;
+  border-radius: 18px;
+  background: rgba(20, 76, 148, 0.24);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.vote-guide-faq__recap-note strong,
+.vote-guide-faq__recap-warning strong {
+  color: var(--gold-300);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.vote-guide-faq__recap-note span,
+.vote-guide-faq__recap-warning span {
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.vote-guide-faq__recap-warning {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 1.05rem;
+  border-radius: 18px;
+  background: rgba(240, 203, 56, 0.14);
+  border: 1px solid rgba(240, 203, 56, 0.24);
 }
 
 .docs-section {
@@ -2934,6 +3087,11 @@ body.menu-open {
 
   .vote-guide-cta__contact-grid,
   .vote-guide-summary__list--grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vote-guide-faq__recap-steps,
+  .vote-guide-faq__recap-notes {
     grid-template-columns: 1fr;
   }
 
