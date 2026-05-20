@@ -14,15 +14,46 @@
     <link rel="apple-touch-icon" href="assets/logo-lista-patto-civico.png" />
     <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="assets/fonts/montserrat-800-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="style.css?v=20260520a" />
+    <link rel="stylesheet" href="style.css?v=20260520c" />
     <script>
       document.documentElement.classList.add("js-enabled");
     </script>
     <script defer src="script.js?v=20260518a"></script>
+    <script defer src="vote-guide-i18n.js?v=20260520b"></script>
   </head>
   <body class="docs-page vote-guide-page">
     <main class="docs-shell">
       <div class="container">
+        <div class="vote-guide-langmenu-wrap">
+          <details class="vote-guide-langmenu">
+            <summary class="vote-guide-langmenu__summary">
+              <span class="vote-guide-langmenu__current">
+                <span class="vote-guide-langmenu__current-flag" data-vote-guide-current-flag>🇮🇹</span>
+                <span class="vote-guide-langmenu__current-label" data-vote-guide-current-label>Italiano</span>
+              </span>
+              <span class="vote-guide-langmenu__chevron" aria-hidden="true">▾</span>
+            </summary>
+            <nav class="vote-guide-langmenu__panel" aria-label="Lingue disponibili">
+              <a class="vote-guide-langmenu__link" data-vote-guide-lang="it" href="./come-si-vota.html">
+                <span class="vote-guide-langmenu__flag" aria-hidden="true">🇮🇹</span>
+                <span>Italiano</span>
+              </a>
+              <a class="vote-guide-langmenu__link" data-vote-guide-lang="ro" href="./come-si-vota.html?lang=ro">
+                <span class="vote-guide-langmenu__flag" aria-hidden="true">🇷🇴</span>
+                <span>Română</span>
+              </a>
+              <a class="vote-guide-langmenu__link" data-vote-guide-lang="pt-br" href="./come-si-vota.html?lang=pt-br">
+                <span class="vote-guide-langmenu__flag" aria-hidden="true">🇧🇷</span>
+                <span>Português (Brasil)</span>
+              </a>
+              <a class="vote-guide-langmenu__link" data-vote-guide-lang="es-ar" href="./come-si-vota.html?lang=es-ar">
+                <span class="vote-guide-langmenu__flag" aria-hidden="true">🇦🇷</span>
+                <span>Español (Argentina)</span>
+              </a>
+            </nav>
+          </details>
+        </div>
+
         <a class="docs-back" href="./">&larr; Torna alla lista</a>
 
         <section class="docs-hero vote-guide-hero">
