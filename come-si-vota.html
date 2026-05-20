@@ -14,7 +14,7 @@
     <link rel="apple-touch-icon" href="assets/logo-lista-patto-civico.png" />
     <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="assets/fonts/montserrat-800-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="stylesheet" href="style.css?v=20260519g" />
+    <link rel="stylesheet" href="style.css?v=20260520a" />
     <script>
       document.documentElement.classList.add("js-enabled");
     </script>
@@ -63,11 +63,36 @@
                   </div>
                 </div>
                 <ul class="vote-guide-summary__list vote-guide-summary__list--grid">
-                  <li><strong>A</strong> Voto alla lista</li>
-                  <li><strong>B</strong> Voto al candidato sindaco e alla lista collegata</li>
-                  <li><strong>C</strong> Voto solo al candidato sindaco</li>
-                  <li><strong>D</strong> Preferenze per i consiglieri</li>
-                  <li><strong>E</strong> Voto disgiunto</li>
+                  <li>
+                    <a class="vote-guide-summary__link" href="#opzione-a">
+                      <strong>A</strong>
+                      <span>Voto alla lista</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="vote-guide-summary__link" href="#opzione-b">
+                      <strong>B</strong>
+                      <span>Voto al candidato sindaco e alla lista collegata</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="vote-guide-summary__link" href="#opzione-c">
+                      <strong>C</strong>
+                      <span>Voto solo al candidato sindaco</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="vote-guide-summary__link" href="#opzione-d">
+                      <strong>D</strong>
+                      <span>Preferenze per i consiglieri</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="vote-guide-summary__link" href="#opzione-e">
+                      <strong>E</strong>
+                      <span>Voto disgiunto</span>
+                    </a>
+                  </li>
                 </ul>
               </div>
             </article>
@@ -107,7 +132,7 @@
         </section>
 
         <section class="vote-guide-list">
-          <article class="vote-guide-row reveal is-visible">
+          <article class="vote-guide-row reveal is-visible" id="opzione-a">
             <div class="vote-guide-content">
               <span class="vote-guide-badge">Opzione A</span>
               <h2>Voto alla lista</h2>
@@ -138,7 +163,7 @@
             </div>
           </article>
 
-          <article class="vote-guide-row reveal is-visible">
+          <article class="vote-guide-row reveal is-visible" id="opzione-b">
             <div class="vote-guide-content">
               <span class="vote-guide-badge">Opzione B</span>
               <h2>Voto al candidato sindaco e alla lista collegata</h2>
@@ -170,7 +195,7 @@
             </div>
           </article>
 
-          <article class="vote-guide-row reveal is-visible">
+          <article class="vote-guide-row reveal is-visible" id="opzione-c">
             <div class="vote-guide-content">
               <span class="vote-guide-badge">Opzione C</span>
               <h2>Voto solo al candidato sindaco</h2>
@@ -201,7 +226,7 @@
             </div>
           </article>
 
-          <article class="vote-guide-row reveal is-visible">
+          <article class="vote-guide-row reveal is-visible" id="opzione-d">
             <div class="vote-guide-content">
               <span class="vote-guide-badge">Opzione D</span>
               <h2>Preferenze per i consiglieri comunali</h2>
@@ -234,7 +259,7 @@
             </div>
           </article>
 
-          <article class="vote-guide-row reveal is-visible">
+          <article class="vote-guide-row reveal is-visible" id="opzione-e">
             <div class="vote-guide-content">
               <span class="vote-guide-badge">Opzione E</span>
               <h2>Voto disgiunto</h2>
@@ -568,6 +593,17 @@
               <span>Usa solo la X, scrivi al massimo due cognomi e non aggiungere altri segni sulla scheda.</span>
             </div>
           </div>
+
+          <div class="vote-guide-note">
+            <p>
+              Questa pagina ha finalità informativa ed è a cura di Patto Civico Alpignano.
+              Le modalità di voto sono riportate sulla base della normativa elettorale per i comuni
+              con popolazione superiore a 15.000 abitanti e delle esemplificazioni ufficiali per
+              l’elezione del Sindaco e del Consiglio Comunale.
+              Per informazioni istituzionali e aggiornamenti ufficiali, consultare il Comune di
+              Alpignano e il Ministero dell’Interno.
+            </p>
+          </div>
         </section>
       </div>
     </main>
@@ -695,7 +731,10 @@
 
     <div class="site-bottombar">
       <div class="container site-bottombar__inner">
-        <a href="privacy.html">Privacy e Cookie</a>
+        <div class="site-bottombar__meta">
+          <a href="privacy.html">Privacy e Cookie</a>
+          <span>Committente responsabile: Linda Genre</span>
+        </div>
         <p class="site-bottombar__credit">
           Design &amp; dev by
           <a href="https://delvup.com" target="_blank" rel="noreferrer">Delvup.com</a>
